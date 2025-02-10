@@ -1,0 +1,456 @@
+    /* ! Css reset tag */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* BODY CSS */
+
+    html {
+        /* IT follow the 10px even you add some new size it will multipile */
+        font-size: 10px;
+    }
+
+    body {
+        background-color: #0A183D;
+        height: 100vh;
+        font-family: 'Open Sans';
+    }
+
+    /* COMMON CSS */
+
+    h2 {
+        font-size: 6rem;
+        /* 6*10px or 6*16px */
+        color: #fff;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+        color: #fff;
+    }
+
+    p {
+        font-size: 1.6rem;
+        color: #c1c1c1;
+        line-height: 1.8;
+    }
+
+    h2.dark,
+    h4.dark,
+    p.dark {
+        color: #0A183D;
+
+    }
+
+    button {
+        padding: 2.25rem 4.5rem;
+        border-radius: 3rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1.4rem;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .common-layout {
+        padding: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .white-bg {
+        background-color: #fff;
+    }
+
+    .red-clr {
+        color: #fe0058;
+    }
+
+    .red-btn {
+        background-color: #fe0058;
+    }
+
+    .blue-btn {
+        background-color: #383870;
+    }
+
+    .flex-basis {
+        flex-basis: 40%;
+    }
+
+    /* NAVBAR CSS */
+
+    nav {
+        background-color: #08192d;
+        padding: 4rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    nav ul a,
+    span {
+        font-size: 1.6rem;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    nav ul a {
+        text-decoration: none;
+        margin-right: 6rem;
+    }
+
+    .nav-bar-right {
+        display: flex;
+        gap: 4.5rem;
+    }
+
+    .fa-solid.fa-bars {
+        font-size: 2.5rem;
+        color: #fff;
+        display: none;
+    }
+
+    .nav-bar-mobile,
+    .logo-mobile {
+        display: none;
+    }
+
+    /* SECTION-1 CSS */
+
+    .section-1 {
+        margin-top: 70px;
+    }
+
+    .section-1 h1 {
+        margin-bottom: 30px;
+        color: #fff;
+
+    }
+
+    .section-1 h1,
+    .section-1 h1 span {
+        font-size: 7rem;
+        line-height: 1;
+        font-weight: 600;
+    }
+
+    .section-1-buttons {
+        display: flex;
+        margin-top: 4rem;
+        gap: 2rem;
+    }
+
+    /* SECTION-2 CSS */
+
+    .section-2 {
+        align-items: start;
+    }
+
+    .section-2-right button {
+        margin-top: 2.5rem;
+    }
+
+    /* SECTION-3 CSS */
+
+    .section-3 {
+        background-image: url(./Image/Section-2/Music-bg.webp);
+        background-size: cover;
+        max-width: 125rem;
+        width: 100%;
+        margin: auto;
+        justify-content: start;
+    }
+
+    .section-3 h2 {
+        margin-bottom: 6rem;
+    }
+
+    .section-3-box-div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+        grid-gap: 6rem;
+    }
+
+    .section-3-box-div h4{
+        margin: 2.5rem 0;
+    }
+
+    .section-3-box {
+        position: relative;
+        z-index: 0;
+    }
+
+    .section-3-box img {
+        max-width: 100%;
+        position: relative;
+        left: 10px;
+        top: 5px;
+    }
+
+    .section-3-box::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        width: 55px;
+        height: 55px;
+        border-radius: 100%;
+        background-color: #fe0058;
+        
+    }
+
+    /* SECTION-4 CSS */
+
+    .section-4-div-1,
+    .section-6-div-1 {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .section-4 h2 {
+        line-height: 1.2;
+    }
+
+    .section-4-photo-div,
+    .section-6-photo-div {
+        padding: 5rem;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 3rem;
+    }
+
+    .img-div figure,
+    img {
+        max-width: 100%;
+        border-radius: 2.5rem;
+        display: block;
+        margin: auto;
+    }
+
+    .img-div figure,
+    figcaption {
+        text-align: center;
+        font-size: 1.8rem;
+        margin-top: 1, 8rem;
+        font-weight: bold;
+    }
+
+    /* SECTION-5 CSS */
+
+    .section-5 {
+        gap: 7rem;
+    }
+
+    .section-5-left h2:nth-child(2) {
+        margin-bottom: 1.5rem;
+    }
+
+    .section-5-left h4 {
+        margin-bottom: 1.8rem;
+    }
+    .section-5-left p{
+        margin-bottom: 2rem;
+    }
+
+    .section-5-right {
+        padding: 5rem;
+        background-color: #1c294a;
+        display: flex;
+        justify-content: center;
+        border-radius: 3rem;
+    }
+
+    .section-5-right img {
+        margin-left: -4rem;
+    }
+
+    .section-5-right p {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .section-5-right p:last-child {
+        margin-bottom: 0;
+    }
+
+    /* SECTION-6 CSS */
+
+    .section-6 {
+        gap: 7rem;
+    }
+
+    .section-6-photo-div .img-div h4 {
+        font-size: 2.4rem;
+    }
+
+    .section-6-photo-div .img-div p {
+        font-weight: 400;
+    }
+
+    .section-6-photo-div .img-div figure img {
+        max-width: 100%;
+        border-radius: 100%;
+    }
+
+    /* FOOTER CSS */
+
+    .footer-main {
+        justify-content: space-evenly;
+        align-items: start;
+    }
+
+    footer h5 {
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    footer p {
+        font-size: 1.4rem;
+    }
+
+    footer .quick-link p {
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+
+    .copy-right-p {
+        font-size: 1.2rem;
+        margin: 1rem 0 4rem;
+    }
+
+    .footer-div .icon-div i {
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 4rem;
+    }
+
+    /* MEDIA-QURIES */
+
+    @media screen and (max-width:991px) {
+
+        /* COMMON CSS */
+        .flex-basis {
+            flex-basis: 100%;
+        }
+
+        /* NAVBAR CSS */
+        nav {
+            padding: 2rem;
+        }
+
+        .nav-bar-left,
+        .nav-bar-right {
+            display: none;
+        }
+
+        .logo-mobile,
+        .fa-solid.fa-bars {
+            display: inline-block;
+        }
+
+        .fa-solid.fa-bars:hover+.nav-bar-mobile {
+            display: block;
+        }
+
+        .nav-bar-mobile {
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: #08192d;
+            width: 100%;
+            padding: 2rem 4rem 1rem 2rem;
+            /* top right bottom right*/
+        }
+
+        .nav-bar-mobile ul {
+            flex-direction: column;
+        }
+
+        .nav-bar-mobile ul li {
+            margin-bottom: 3rem;
+        }
+
+        .nav-bar-mobile li a {
+            font-size: 2rem;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+
+        /* COMMON CSS */
+        .flex-basis {
+            flex-basis: 90%;
+        }
+
+        h2 {
+            font-size: 4rem;
+        }
+
+        .common-layout {
+            padding: 4rem 3rem;
+        }
+
+        /* SECTION-1 CSS */
+        .section-1 h1,
+        .section-1 h1 span {
+            font-size: 5rem;
+        }
+
+        .section-1-right img {
+            width: 100%;
+            margin-bottom: 4rem;
+        }
+
+        .section-1-buttons {
+            flex-direction: column;
+        }
+
+        /* SECTION-3 CSS */
+
+        .section-3 {
+            width: 90%;
+        }
+        .section-3 h2{
+            margin: 2rem 0;
+        }
+        /* !IMP SECTION-4 CSS */
+        .section-4-photo-div,.section-6-photo-div{
+            padding: 2rem 0;
+            grid-gap: 5rem;
+        }
+        /* !IMP SECTION-5 CSS */
+        .section-5{
+            gap:5rem;
+        }
+        .section-5-right{
+            padding: 3rem;
+        }
+        /* !IMP FOOTER CSS */
+         footer.common-layout{
+             flex-direction: column;
+        }
+        .copy-right-p{
+            margin: 1rem 0 2rem;
+        }
+    }
